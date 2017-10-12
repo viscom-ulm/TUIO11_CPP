@@ -1,5 +1,4 @@
 cmake_minimum_required (VERSION 2.6)
-set(CMAKE_CONFIGURATION_TYPES Release Debug)
 project (TUIO)
 
 include_directories(oscpack)
