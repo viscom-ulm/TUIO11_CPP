@@ -33,6 +33,7 @@ ENDIF()
 
 
 add_library(libTUIO SHARED ${TUIO_SOURCES} ${OSC_SOURCES} ${OSC_SOURCES_2} ${TUIO_HEADERS} ${OSC_HEADERS})
+target_include_directories(libTUIO INTERFACE SYSTEM TUIO oscpack)
 
 if(WIN32 OR WIN64)
 	target_link_libraries(libTUIO ws2_32 winmm)
